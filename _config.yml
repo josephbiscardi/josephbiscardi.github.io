@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Joseph Biscardi / Joseph's Site"
+title                    : "Joseph Biscardi"
 title_separator          : "-"
 name                     : &name "Joseph Biscardi"
 description              : &description "personal description"
