@@ -9,51 +9,38 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+EDUCATION:		East Carolina University, Greenville, NC					May 2019
+			Candidate for Bachelor of Science in Information Technology
+			Concentration in Security
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+			Aquinas Institute, Rochester, NY					June 2014
+			Graduated with Advance Distinction with Honors
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+EXPERIENCE:		Student Computer Labs, East Carolina University   		Jan 2018 - Present 
+			Lab Technician
+•	Routinely monitor ticket queue for incoming problems in labs
+•	Provide hardware support for computers, laptop carts and printers
+•	Keep lab computers imaged to current image
+•	Assist with surplus orders and inventory
+•	Document and create guides for future student works
+•	Hardware replacements of screens, hard drives and other items
+
+Ann’s House of Nuts, Robersonville, NC				Jun 2015 – Aug 2017
+			Help Desk Support Specialist
+•	Troubleshoot numerous electronic equipment throughout the facility such as laptops, computers, scanners, label printers, etc.
+•	Assist all personnel with any computer related issues received through the ticket based system.
+•	Create and delete user accounts.
+•	Monitor ports in the server room
+•	Continuous learning from the IT Department 
+	
+Community
+Involvement:		D.H. Conley Club Lacrosse				February 2017- Present
+			Head Coach
+•	Coached 22 high school boys 
+•	Set up practices and run drills
+
+
+SKILLS
+Computer: 	Microsoft Office, Hardware repair, Java, Python, Ticketing Systems, Cisco IOS, Redhat 
+Soft Skills: 	Communication, Fast learner, Team Work
