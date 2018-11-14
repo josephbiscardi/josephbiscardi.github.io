@@ -84,9 +84,9 @@ author:
   avatar           : "profile.png"
   bio              : "IT Professional with a BS in ICT and a cybersecurity concentration. "
   location         : "North Carolina, USA"
-  employer         :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  employer         : "East Carolina University"
+  googlescholar    : 
+  email            : "joseph@josephbiscardi.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -99,14 +99,14 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "https://www.linkedin.com/in/joseph-biscardi-0730a1143/"
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
