@@ -2,13 +2,13 @@
 main:
 
   - title: "Resume"
-    url: /cv/
+    url: /resume/
     
   - title: "Capstone Project"
-    url: /portfolio/
+    url: /capstone/
     
   - title: "Coding Projects"
-    url: /publications/
+    url: /projects/
       
   
     
