@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Projects"
-permalink: /publications/
+title: "Coding Projects"
+permalink: /projects/
 author_profile: true
 ---
 Coming Soon!
