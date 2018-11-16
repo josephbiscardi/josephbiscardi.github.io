@@ -1,58 +1,33 @@
 {
-  "name": "animate.css",
-  "version": "3.7.0",
-  "main": "animate.css",
+  "name": "minimal-mistakes",
+  "version": "3.4.2",
+  "description": "Minimal Mistakes Jekyll theme npm build scripts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/daneden/animate.css.git"
+    "url": "git://github.com/mmistakes/minimal-mistakes.git"
   },
-  "author": {
-    "name": "Daniel Eden"
-  },
-  "homepage": "https://daneden.github.io/animate.css/",
+  "keywords": [
+    "jekyll",
+    "theme",
+    "minimal"
+  ],
+  "author": "Michael Rose",
   "license": "MIT",
-  "style": "./animate.css",
-  "jspm": {
-    "main": "animate.css!",
-    "format": "global",
-    "directories": {
-      "lib": "./"
-    }
+  "bugs": {
+    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+  },
+  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+  "engines": {
+    "node": ">= 0.10.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.0.1",
-    "cssnano": "^4.0.3",
-    "eslint": "^5.2.0",
-    "gulp": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-header": "^2.0.1",
-    "gulp-postcss": "^7.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.8",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.0.0",
-    "prettier": "^1.10.2",
-    "run-sequence": "^2.2.1"
-  },
-  "lint-staged": {
-    "*.{js,json,md,css}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "prettier": {
-    "bracketSpacing": false,
-    "proseWrap": "never",
-    "singleQuote": true,
-    "trailingComma": "all"
+    "npm-run-all": "^1.7.0",
+    "onchange": "^2.2.0",
+    "uglify-js": "^2.6.1"
   },
   "scripts": {
-    "gulp": "./node_modules/gulp/bin/gulp.js",
-    "start": "gulp",
-    "prettier": "prettier --write \"**/*.{js,json,md,css}\"",
-    "precommit": "lint-staged"
-  },
-  "spm": {
-    "main": "./animate.css"
+    "uglify": "uglifyjs assets/js/vendor/jquery/jquery-1.12.4.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/plugins/stickyfill.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
+    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
+    "build:js": "npm run uglify"
   }
 }
