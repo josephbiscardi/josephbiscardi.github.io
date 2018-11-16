@@ -4,9 +4,9 @@ main:
   - title: "Resume"
     url: /cv/
     
-  -title: "Capstone Project"
+  - title: "Capstone Project"
     url: /portfolio/
     
-   -title: "Coding Projects"
+   - title: "Coding Projects"
       url: /publications/
     
