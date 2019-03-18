@@ -4,8 +4,8 @@ main:
   - title: "Resume"
     url: /resume/
     
-  - title: "Capstone Project"
-    url: /capstone/
+  - title: "Scripts and Projects"
+    url: /projects/
     
   - title: "Courses"
     url: /courses/
