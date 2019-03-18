@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Course Work"
+title: "Courses"
 permalink: /courses/
 author_profile: true
 ---
@@ -18,14 +18,3 @@ author_profile: true
  
  </ul>
  
- <h2> Technologies and Skils </h2>
- <ul> 
- <li> Active Directory </li>
- <li> RedHat Linux </li>
- <li> Cisco IOS </li>
- <li> SNMP, MIB Browser </li>
- <li> Palo Alto Firewalls </li>
- <li> Python</li>
- <li> Wireshark, Snort, Splunk </li>
- 
- </ul>
