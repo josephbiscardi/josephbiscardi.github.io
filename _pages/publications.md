@@ -19,6 +19,7 @@ author_profile: true
  </ul>
  
  <h2> Technologies and Skils </h2>
+ <ul> 
  <li> Active Directory </li>
  <li> RedHat Linux </li>
  <li> Cisco IOS </li>
