@@ -20,7 +20,7 @@ author_profile: true
  </ul>
  
  
-<h2> <center> CCAE </h3> </center>
+<h2> <center> CCAE </h2> </center>
 
 <h3> Capstone Project </h3>
 
