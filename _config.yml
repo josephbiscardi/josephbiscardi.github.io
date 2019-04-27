@@ -49,7 +49,7 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   
-podcast_url: http://www.joebuhlig.com/optinprivacy
+podcast_url: http://www.josephbiscardi.com/optinprivacy
 podcast_album_art: 
 podcast_title: Optin Privacy
 podcast_owner: Joe Biscardi
