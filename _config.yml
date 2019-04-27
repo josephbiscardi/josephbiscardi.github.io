@@ -48,8 +48,19 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
-
-# SEO Related
+  
+podcast_url: http://www.joebuhlig.com/optinprivacy
+podcast_album_art: 
+podcast_title: Optin Privacy
+podcast_owner: Joe Biscardi
+podcast_email: privacy@josephbiscardi.com
+podcast_category: Technology
+podcast_subcategory_one: Software How-To
+podcast_subcategory_two: Gadgets
+podcast_explicit: "no"
+podcast_author: Joe Biscardi
+podcast_description: 
+podcast_summary: 
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
