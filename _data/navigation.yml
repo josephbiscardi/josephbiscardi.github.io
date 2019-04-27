@@ -9,7 +9,10 @@ main:
     
   - title: "Courses"
     url: /courses/
-
+    
+  - title: "Podcast"
+    url: /optinprivacy/
+    
   - title: "Terms and Privacy"
     url: /terms/
     
