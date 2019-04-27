@@ -9,7 +9,7 @@ author_profile: true
 <ul>
   
  <li> Microsoft Server </li>
- <li> Senior Project(Capstone)
+ <li> Senior Project(Capstone) </li>
  <li> RedHat Linux </li>
  <li> Cisco CCNA </li>
  <li> Enterprise management and security </li>
