@@ -6,16 +6,16 @@ author_profile: true
 ---
 <h2> Courses taken </h2>
 
+
 <ul>
-  
- <li> Microsoft Server </li>
- <li> Senior Project(Capstone) </li>
- <li> RedHat Linux </li>
- <li> Cisco CCNA </li>
- <li> Enterprise management and security </li>
- <li> Palo Alto Firewalls </li>
- <li> Python Scripting </li>
- <li> Intrustion Detection </li>
+  <li> Microsoft Server </li>
+  <li> Senior Project(Capstone) </li>
+  <li> RedHat Linux </li>
+  <li> Cisco CCNA </li>
+  <li> Enterprise management and security </li>
+  <li> Palo Alto Firewalls </li>
+  <li> Python Scripting </li>
+  <li> Intrustion Detection </li>
  
  </ul>
  
