@@ -8,7 +8,7 @@ main:
     url: /projects/
     
     
-  -title : "Writings"
+  - title : "Writings"
     url: /teachings/ 
     
   - title: "Terms and Privacy"
