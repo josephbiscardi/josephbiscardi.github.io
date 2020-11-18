@@ -7,6 +7,10 @@ main:
   - title: "Projects"
     url: /projects/
     
+    
+  -title : "Writings"
+    url: /teachings/ 
+    
   - title: "Terms and Privacy"
     url: /terms/
     
