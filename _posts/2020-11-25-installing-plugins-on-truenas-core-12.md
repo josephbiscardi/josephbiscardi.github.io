@@ -17,7 +17,7 @@ Prerequisites
 
 
 Creating datasets 
-------
+======
 1. Create a dataset to hold your mount points on your jails, for example I named my set 'testmedia'. After, create data sets under your created data sets. I created 'radarr', 'sonarr', 'jackett' and 'transmission'. 
 pic
 2. Next, we want to set permissions to make sure the content is able to be read and writable. 
