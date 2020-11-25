@@ -27,6 +27,7 @@ pic
 5. From the ACL Manager, create a Custom ACL and set the ACL list to use the user '971' with Full Control, Inherit, apply recursive set and apply to child data sets
 pic
 * You can ignore the error about not finding the user '971' 
+
 Plex 
 ======
 1. SSH into your TrueNAS and use the command iocage console [plex jail name] to access the command line of your plex jail
