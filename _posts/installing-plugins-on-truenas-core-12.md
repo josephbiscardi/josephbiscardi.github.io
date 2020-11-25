@@ -8,13 +8,15 @@ tags:
   - category2
 ---
 
-This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
 
-Headings are cool
+
+Setting up Home Media Server on TrueNAS Core 12 using plugins
 ======
 
-You can have many headings
+Prerequisites
 ======
+1. Install the plugins for Plex, Radarr/Sonarr, Jackett & Transmission
+2. A working VPN connection that allows OpenVPN(PIA, NordVPN, etc)
 
 Aren't headings cool?
 ------
