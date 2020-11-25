@@ -22,3 +22,5 @@ Prerequisites
 
 Creating datasets 
 ------
+1. Create a dataset to hold your mount points on your jails. I created a media dataset and sub data sets for jackett, transmission, radarr and sonarr
+![Media Dataset](https://octodex.github.com/images/chrome_MTc46Z4LT3.png)
