@@ -18,7 +18,7 @@ Prerequisites
 1. Plugins installed for Plex, Radarr/Sonarr, Jackett & Transmission
 2. A working VPN connection that allows OpenVPN(PIA, NordVPN, etc)
 3. SSH Access
-4. 
+
 
 Creating datasets 
 ------
