@@ -1,7 +1,7 @@
 ---
 title: 'Setting up Home Media Server on TrueNAS Core 12 using plugins'
 date: 2012-08-14
-permalink: /posts/installing-plugins-on-truenas-core-12
+permalink: /posts/installing-plugins-on-truenas-core-12/
 tags:
   - cool posts
   - category1
