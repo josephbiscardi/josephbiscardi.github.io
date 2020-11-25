@@ -23,4 +23,4 @@ Prerequisites
 Creating datasets 
 ------
 1. Create a dataset to hold your mount points on your jails. I created a media dataset and sub data sets for jackett, transmission, radarr and sonarr
-![Media Dataset](https://josephbiscardi.com/images/chrome_MTc46Z4LT3.png)
+![Media Dataset](https://github.com/josephbiscardi/josephbiscardi.github.io/blob/master/images/chrome_MTc46Z4LT3.png)
