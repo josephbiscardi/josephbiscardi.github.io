@@ -18,13 +18,14 @@ Prerequisites
 
 Creating datasets 
 ------
-1. Create a dataset to hold your mount points on your jails, for example I named my set 'media'. After, create data sets under your created data sets. I created 'radarr', 'sonarr', 'jackett' and 'transmission'. You can leave these as is or create additional data sets to go under the different sets we created.
-![Media Dataset](https://raw.githubusercontent.com/josephbiscardi/josephbiscardi.github.io/master/images/chrome_MTc46Z4LT3.png)
+1. Create a dataset to hold your mount points on your jails, for example I named my set 'testmedia'. After, create data sets under your created data sets. I created 'radarr', 'sonarr', 'jackett' and 'transmission'. You can leave these as is or create additional data sets to go under the different sets we created.
+pic
 2. Next, we want to set permissions to make sure the content is able to be read and writable. 
 3. Click on 3 dots beside the first data set you created and click on 'Edit Permissions' 
 4. Once the permission window is open, click on 'Use ACL Manager' 
 5. From the ACL Manager, create a Custom ACL and set the ACL list to use the user '972' with Full Control, Inherit and apply recursive set 
 pic
+
 Plex 
 ======
 1. SSH into your TrueNAS and use the command iocage console [plex jail name] to access the command line of your plex jail
@@ -35,4 +36,8 @@ To do this, you want to use the command chown -R plex:plex on the file path, so 
 pic
 4. To check the permissions, you can use ls -l on the your /media directory to check the permissions of the /data directory. 
 pic
-5. 
+5. After you verified the permissions, stop the jail and open 'Mount Points' 
+6. Add a new mount point that connects the transmission data set and your directory that was created in Step 2. 
+pic
+9. Lastly, navigate to the web gui http://JAIL_IP:32400 and go through the server setup
+10. On the 'Media Library' section find your directory you created in step 2.
