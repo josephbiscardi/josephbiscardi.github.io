@@ -40,7 +40,7 @@ Make a directory that will locally hold your content. I chose /media/data as my 
 This new directory will need to have read/write permissions for the user and group 'plex' which should have been created during the plugin installation. 
 To do this, you want to use the command chown -R plex:plex on the file path, so for my example /media/data. 
 
-`chown -R plex:plex /media/data/' `
+`chown -R plex:plex /media/data/`
 
 To check the permissions, you can use ls -l on the your /media directory to check the permissions of the /data directory. 
 
