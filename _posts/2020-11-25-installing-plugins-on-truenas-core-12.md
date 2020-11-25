@@ -30,29 +30,29 @@ pic
 
 Plex 
 -----
-1. SSH into your TrueNAS and access the command line of your plex jail
+SSH into your TrueNAS and access the command line of your plex jail
 `iocage console [plex jail name]`
 
-2. Make a directory that will locally hold your content. I chose /media/data as my directory
+Make a directory that will locally hold your content. I chose /media/data as my directory
 
 `mkdir /media/data`
 
-3. This new directory will need to have read/write permissions for the user and group 'plex' which should have been created during the plugin installation. 
+This new directory will need to have read/write permissions for the user and group 'plex' which should have been created during the plugin installation. 
 To do this, you want to use the command chown -R plex:plex on the file path, so for my example /media/data. 
 
 `chown -R plex:plex /media/data/' `
 
-4. To check the permissions, you can use ls -l on the your /media directory to check the permissions of the /data directory. 
+To check the permissions, you can use ls -l on the your /media directory to check the permissions of the /data directory. 
 
 `ls -l /media/`
 
 pic
 
-5. After you verified the permissions, stop the jail and open 'Mount Points' 
-6. Add a new mount point that connects the transmission data set and your directory that was created in Step 2. 
+After you verified the permissions, stop the jail and open 'Mount Points' 
+Add a new mount point that connects the transmission data set and your directory that was created in Step 2. 
 pic
-9. Lastly, navigate to the web gui http://JAIL_IP:32400 and go through the server setup
-10. On the 'Media Library' section find your directory you created in step 2.
+Lastly, navigate to the web gui http://JAIL_IP:32400 and go through the server setup
+On the 'Media Library' section find your directory you created in step 2.
 
 Transmission 
 -----
