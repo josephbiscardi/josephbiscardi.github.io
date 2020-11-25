@@ -31,6 +31,7 @@ pic
 Plex 
 -----
 SSH into your TrueNAS and access the command line of your plex jail
+
 `iocage console [plex jail name]`
 
 Make a directory that will locally hold your content. I chose /media/data as my directory
