@@ -24,15 +24,15 @@ Creating datasets
 3. Click on 3 dots beside the first data set you created and click on 'Edit Permissions' 
 4. Once the permission window is open, click on 'Use ACL Manager' 
 5. From the ACL Manager, create a Custom ACL and set the ACL list to use the user '972' with Full Control, Inherit and apply recursive set 
-------
+pic
 Plex 
 ======
 1. SSH into your TrueNAS and use the command iocage console [plex jail name] to access the command line of your plex jail
-------
+pic
 2. Make a directory that will locally hold your content. use mkdir to create these folders(eg. mkdir /media/data)
 3. This new directory will need to have read/write permissions for the user and group 'plex' which should have been created during the plugin installation. 
 To do this, you want to use the command chown -R plex:plex on the file path, so for my example /media/data
--------
-4. To check the permissions, you can use ls -l on the file path
-----
+pic
+4. To check the permissions, you can use ls -l on the your /media directory to check the permissions of the /data directory. 
+pic
 5. 
