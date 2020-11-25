@@ -9,10 +9,6 @@ tags:
 ---
 
 
-
-Setting up Home Media Server on TrueNAS Core 12 using plugins
-======
-
 Prerequisites
 ======
 1. Plugins installed for Plex, Radarr/Sonarr, Jackett & Transmission
