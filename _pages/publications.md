@@ -7,4 +7,4 @@ author_profile: true
 
 
 
-<li> <a href="/pages/truenas.md"> Setting up Home Media Server on TrueNAS Core 12  using plugins</li>
+<li> <a href="/guides/installing-plugins-on-truenas-core-12"> Setting up Home Media Server on TrueNAS Core 12  using plugins</li>
