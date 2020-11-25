@@ -6,6 +6,8 @@ main:
     
   - title: "Projects"
     url: /projects/
+  - title: "Guides"
+    url: /guides/
     
   - title: "Terms and Privacy"
     url: /terms/
