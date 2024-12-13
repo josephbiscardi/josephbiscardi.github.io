@@ -4,9 +4,6 @@ main:
   - title: "Resume"
     url: /resume/
     
-  - title: "Projects"
-    url: /projects/
-
   - title: Tech Blog
     url: https://bistech.com
 
