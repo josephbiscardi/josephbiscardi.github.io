@@ -6,6 +6,12 @@ main:
     
   - title: "Projects"
     url: /projects/
+
+  - title: Tech Blog
+    url: https://bistech.com
+
+  - title: Travel Agency
+    url: https://ecexplorers.com
     
   - title: "Terms and Privacy"
     url: /terms/
