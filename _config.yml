@@ -49,11 +49,11 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   
-podcast_url: http://www.josephbiscardi.com/optinprivacy
+podcast_url:
 podcast_album_art: 
-podcast_title: Optin Privacy
-podcast_owner: Joe Biscardi
-podcast_email: privacy@josephbiscardi.com
+podcast_title: 
+podcast_owner: 
+podcast_email: 
 podcast_category: Technology
 podcast_subcategory_one: Software How-To
 podcast_subcategory_two: Gadgets
@@ -93,9 +93,9 @@ analytics:
 author:
   name             : "Joseph Biscardi"
   avatar           : "DSC_0154.JPG"
-  bio              : "IT Professional with a BS in ICT and a Security concentration. "
-  location         : "North Carolina, USA"
-  employer         : "East Carolina University"
+  bio              : "IT Systems Specialist, · infrastructure, identity, security"
+  location         : "North Carolina"
+  employer         : 
   googlescholar    : 
   email            : "joseph@josephbiscardi.com"
   uri              :
