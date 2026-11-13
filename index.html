@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph Biscardi | IT Systems Specialist</title>
+  <meta name="description" content="IT Systems Specialist with 7+ years supporting infrastructure, identity, security, and endpoints in manufacturing. Based in Eastern North Carolina. Open to Systems Admin, M365, Endpoint, and hybrid IT/security roles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1419;
+      --bg-elevated: #1a2129;
+      --bg-card: #1e262f;
+      --text: #e8edf2;
+      --text-muted: #9aa5b1;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --border: #2d3742;
+      --success: #10b981;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Nav */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(15, 20, 25, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+    }
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+    }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem; color: var(--text); text-decoration: none; }
+    .nav-links { display: flex; gap: 1.75rem; list-style: none; }
+    .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+    .nav-cta { background: var(--accent); color: white !important; padding: 0.45rem 1rem; border-radius: 6px; font-weight: 600; }
+    .nav-cta:hover { background: var(--accent-hover); }
+
+    /* Hero */
+    .hero {
+      padding: 8rem 0 5rem;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 3.75rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+    }
+    .hero .title {
+      font-size: 1.25rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .hero .location { color: var(--text-muted); margin-bottom: 1.5rem; }
+    .hero p { font-size: 1.1rem; color: var(--text-muted); max-width: 540px; margin-bottom: 2rem; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-primary { background: var(--accent); color: white; }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-secondary { background: var(--bg-card); color: var(--text); border: 1px solid var(--border); }
+    .btn-secondary:hover { border-color: var(--accent); }
+    .hero-photo {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--bg-card);
+      box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.15);
+      justify-self: end;
+    }
+
+    /* Sections */
+    section { padding: 5rem 0; }
+    section h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .section-subtitle { color: var(--text-muted); margin-bottom: 2.5rem; }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .skill-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+    .skill-card h3 { font-size: 1rem; margin-bottom: 0.75rem; color: var(--accent); }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .tag {
+      background: rgba(59, 130, 246, 0.12);
+      color: #93c5fd;
+      font-size: 0.8rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      font-weight: 500;
+    }
+
+    /* Experience */
+    .timeline { position: relative; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+    .job {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .job::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+    .job-header { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.25rem; }
+    .job h3 { font-size: 1.15rem; }
+    .job .company { color: var(--accent); font-weight: 600; }
+    .job .dates { color: var(--text-muted); font-size: 0.9rem; }
+    .job ul { margin-top: 0.75rem; padding-left: 1.25rem; color: var(--text-muted); }
+    .job li { margin-bottom: 0.4rem; }
+
+    /* About + Contact split */
+    .two-col { display: grid; grid-template-columns: 1.4fr 0.6fr; gap: 3rem; }
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .contact-card a { color: var(--accent); text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+    .contact-item { margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; text-align: center; padding-top: 6rem; }
+      .hero-photo { justify-self: center; width: 200px; height: 200px; order: -1; }
+      .hero p { margin-left: auto; margin-right: auto; }
+      .hero-actions { justify-content: center; }
+      .nav-links { display: none; }
+      .two-col { grid-template-columns: 1fr; }
+      .job-header { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">JB</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero container">
+    <div>
+      <h1>Joseph Biscardi</h1>
+      <div class="title">IT Systems Specialist · Infrastructure, Identity & Security</div>
+      <div class="location">Eastern North Carolina</div>
+      <p>7+ years supporting mixed Windows, macOS, and iPad environments in manufacturing. Currently owning day-to-day infrastructure, identity, endpoint management, backup, monitoring, and plant-floor systems for 130 users.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <a href="https://www.linkedin.com/in/joseph-biscardi/" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        <a href="https://github.com/josephbiscardi" target="_blank" class="btn btn-secondary">GitHub</a>
+      </div>
+    </div>
+    <img src="profile.jpg" alt="Joseph Biscardi" class="hero-photo">
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p class="section-subtitle">Hands-on systems and security professional focused on reliable, secure infrastructure.</p>
+      <div class="two-col">
+        <div>
+          <p style="margin-bottom: 1rem;">I currently serve as IT Systems Specialist at Metallix Refining in Greenville, NC, where I support 130 users across a mixed device fleet. My day-to-day work covers Microsoft Entra ID and Intune, Mosyle MDM, Cisco Duo MFA, UniFi networking and Protect, SonicWall, SentinelOne, Datto backups, PRTG/Site24x7 monitoring, Windows Server, Linux, and Ignition SCADA for operational technology.</p>
+          <p style="margin-bottom: 1rem;">I enjoy building and refining systems—whether that’s automating provisioning, tightening identity and access, improving visibility, or keeping OT environments available and secure. Outside of work I run a homelab, build PCs, write scripts, and stay current with new technologies.</p>
+          <p>When I’m offline I spend time with friends and family, try new food, travel, and experience different cultures and cuisines (I also do occasional freelance travel agent work).</p>
+        </div>
+        <div class="contact-card" id="contact">
+          <h3 style="margin-bottom: 1rem;">Contact</h3>
+          <div class="contact-item">✉️ <a href="mailto:joe@josephbiscardi.com">joe@josephbiscardi.com</a></div>
+          <div class="contact-item">💼 <a href="https://www.linkedin.com/in/joseph-biscardi/" target="_blank">LinkedIn</a></div>
+          <div class="contact-item">🐙 <a href="https://github.com/josephbiscardi" target="_blank">GitHub</a></div>
+          <div class="contact-item">🌐 josephbiscardi.com</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="background: var(--bg-elevated);">
+    <div class="container">
+      <h2>Skills</h2>
+      <p class="section-subtitle">Core technologies I use day-to-day</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Identity & Devices</h3>
+          <div class="skill-tags">
+            <span class="tag">Entra ID</span><span class="tag">Intune</span><span class="tag">Mosyle MDM</span>
+            <span class="tag">Cisco Duo</span><span class="tag">Windows</span><span class="tag">macOS</span><span class="tag">iPadOS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Infrastructure</h3>
+          <div class="skill-tags">
+            <span class="tag">Windows Server</span><span class="tag">Linux</span><span class="tag">UniFi</span>
+            <span class="tag">SonicWall</span><span class="tag">Tailscale</span><span class="tag">Action1</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Security</h3>
+          <div class="skill-tags">
+            <span class="tag">SentinelOne</span><span class="tag">Cisco Duo</span><span class="tag">SonicWall</span>
+            <span class="tag">Access Control</span><span class="tag">EDR/XDR</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Monitoring & Backup</h3>
+          <div class="skill-tags">
+            <span class="tag">PRTG</span><span class="tag">Site24x7</span><span class="tag">Datto</span>
+            <span class="tag">Disaster Recovery</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Operations & OT</h3>
+          <div class="skill-tags">
+            <span class="tag">Ignition SCADA</span><span class="tag">UniFi Protect</span>
+            <span class="tag">SOP Documentation</span><span class="tag">On-site & Remote Support</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Scripting & Other</h3>
+          <div class="skill-tags">
+            <span class="tag">PowerShell</span><span class="tag">Python</span><span class="tag">Hardware</span>
+            <span class="tag">Homelab</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <p class="section-subtitle">Professional history</p>
+      <div class="timeline">
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <h3>IT Systems Specialist</h3>
+              <div class="company">Metallix Refining · Greenville, NC</div>
+            </div>
+            <div class="dates">April 2021 – Present</div>
+          </div>
+          <ul>
+            <li>Support 130 users across a mixed Windows, macOS, and iPad fleet using Intune, Mosyle MDM, and Action1 for provisioning, compliance, and patching.</li>
+            <li>Administer Microsoft Entra ID and Cisco Duo for identity, MFA, and secure access; use Tailscale for remote connectivity to internal systems.</li>
+            <li>Operate and maintain UniFi switching, wireless, and UniFi Protect plus SonicWall firewalls; monitor infrastructure health with PRTG and Site24x7.</li>
+            <li>Administer Windows Server and Linux systems; protect endpoints with SentinelOne and back up critical systems with Datto, including restore checks.</li>
+            <li>Serve as Ignition administrator for operational technology on the plant floor; keep OT systems available while coordinating access with corporate IT.</li>
+            <li>Document SOPs and provide on-site and remote support for refining operations, covering cloud, server, backup, and network issues.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <h3>System Administrator</h3>
+              <div class="company">LS Tractor USA · Battleboro, NC</div>
+            </div>
+            <div class="dates">May 2019 – April 2021</div>
+          </div>
+          <ul>
+            <li>Installed, configured, and maintained servers, workstations, and line-of-business tools for a manufacturing operation.</li>
+            <li>Monitored system performance and handled hardware and software issues to keep production and office users online.</li>
+            <li>Maintained access controls, backups, and firewall rules; supported onboarding and day-to-day user requests.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <h3>Student Lab Technician</h3>
+              <div class="company">ITCS Student Services, East Carolina University · Greenville, NC</div>
+            </div>
+            <div class="dates">January 2018 – May 2019</div>
+          </div>
+          <ul>
+            <li>Imaged desktops and laptops and provided technical support to computer labs across both campuses.</li>
+            <li>Completed inventory checks, handled tickets, and assisted with device replacement and repairs.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <h3>Computer Lab Assistant</h3>
+              <div class="company">Learning Resource Center, East Carolina University · Greenville, NC</div>
+            </div>
+            <div class="dates">August 2016 – January 2018</div>
+          </div>
+          <ul>
+            <li>Supported a 30-desktop student lab, print services, and day-to-day lab operations.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <h3>Help Desk Support Specialist</h3>
+              <div class="company">Ann's House of Nuts · Robersonville, NC</div>
+            </div>
+            <div class="dates">June 2015 – August 2018</div>
+          </div>
+          <ul>
+            <li>Troubleshot laptops, desktops, scanners, and printers; handled tickets for plant and office users.</li>
+            <li>Created and removed Active Directory accounts and supported the on-site IT team.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" style="background: var(--bg-elevated);">
+    <div class="container">
+      <h2>Education & Certifications</h2>
+      <div class="job" style="padding-left: 0; margin-top: 1.5rem;">
+        <div class="job-header">
+          <div>
+            <h3>B.S. Information and Computer Technology</h3>
+            <div class="company">East Carolina University · Security Concentration</div>
+          </div>
+          <div class="dates">May 2019</div>
+        </div>
+      </div>
+      <div class="job" style="padding-left: 0;">
+        <div class="job-header">
+          <div>
+            <h3>Accredited Configuration Engineer (ACE)</h3>
+            <div class="company">Palo Alto Networks</div>
+          </div>
+          <div class="dates">December 2018</div>
+        </div>
+      </div>
+      <div class="job" style="padding-left: 0;">
+        <div class="job-header">
+          <div>
+            <h3>Head Coach</h3>
+            <div class="company">D.H. Conley Club Lacrosse</div>
+          </div>
+          <div class="dates">February 2017 – May 2018</div>
+        </div>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Coached 22 high school players and ran practices and drills.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Joseph Biscardi. Built with care for a modern professional presence.</p>
+    </div>
+  </footer>
+</body>
+</html>
